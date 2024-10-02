@@ -628,6 +628,7 @@
     .main__search {
         position: relative;
         width: 75%; 
+        display: none;
       }
       .main__content ul{
         display: flex;
@@ -635,7 +636,16 @@
         gap: 20px;
         align-items: center;
         padding: 0 0 2% 0;
+        /* display: none; */
+        width: 175%;
+    }
+
+    .main__content__scroll{
         overflow: scroll;
+    }
+
+    .main__content__scroll::-webkit-scrollbar{
+        display: none;
     }
 
     .footer__content_cart ul li a{
